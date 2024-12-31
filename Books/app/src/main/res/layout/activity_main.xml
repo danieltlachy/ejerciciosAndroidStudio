@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/book_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <EditText
+            android:id="@+id/book_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/book_image"
+            android:layout_toEndOf="@+id/book_image"
+            android:hint="@string/book_title_label" />
+
+        <EditText
+            android:id="@+id/book_authors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/book_authors_label"
+            android:layout_toEndOf="@+id/book_image"
+            android:layout_alignBottom="@id/book_image"
+            android:layout_marginTop="16dp"
+            />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/book_image"
+            android:background="@color/design_default_color_background"
+            />
+
+        <TextView
+            android:id="@+id/comment_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/comment_label"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/book_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/comment_label"
+            android:layout_below="@id/comment_label"
+            android:layout_marginTop="16dp"
+            />
+
+        <TextView
+            android:id="@+id/rating_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/book_comment"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/rating_label"
+            android:textSize="20sp" />
+
+        <RatingBar
+            android:id="@+id/rating_book"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rating_label"
+            android:progressTint="@color/yellow"
+            />
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="16dp"
+            android:text="@string/save_btn" />
+
+    </RelativeLayout>
+</layout>

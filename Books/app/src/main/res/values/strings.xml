@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Desapp05</string>
+    <string name="rating_label">Rating</string>
+    <string name="book_title_label">Book title</string>
+    <string name="book_authors_label">Book authors</string>
+    <string name="comment_label">Comment</string>
+    <string name="save_btn">Save</string>
+    <string name="error_taking_photo">Error taking photo</string>
+</resources>
